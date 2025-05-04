@@ -9,11 +9,12 @@ import Awards from './Awards';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './App.css'; 
+import './App.css';
 
 function App() {
   return (
     <>
+      <GMDNavbar />
       <main className="main-content">
         <About />
         <Experience />
