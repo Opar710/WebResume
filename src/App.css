@@ -1,10 +1,11 @@
 @charset "UTF-8";
 
-/* ===== RESET & BASE ===== */
-* {
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 html {
@@ -21,6 +22,7 @@ body {
   font-family: inherit;
   background: inherit;
   color: inherit;
+  overflow-x: hidden;
 }
 
 ul,
@@ -398,7 +400,7 @@ model-viewer {
 /* ===== MEDIA QUERIES ===== */
 @media (max-width: 1200px) {
   #sideNav {
-    display: none;
+    display: none !important;
   }
 
   .gmd-navbar {
@@ -411,8 +413,8 @@ model-viewer {
 
   main,
   .main-content {
-    margin-left: 0;
-    padding-left: 0;
+    margin-left: 0 !important;
+    padding-left: 0 !important;
   }
 
   .mobile-title {

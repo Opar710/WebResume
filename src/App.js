@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import './App.css';
 
-import profileImg from 'public/assets/images/profile.jpg';
+import profileImg from './profile.jpg';
 
 function App() {
   return (
