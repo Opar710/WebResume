@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import GMDNavbar from './Navbar';
 import About from './About';
 import Experience from './Experience';
@@ -14,6 +14,10 @@ import './App.css';
 import profileImg from './profile.jpg';
 
 function App() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div className="layout">
       {/* Desktop Sidebar Nav */}
@@ -31,12 +35,10 @@ function App() {
         </ul>
       </div>
 
-      {/* Mobile Top Navbar */}
       <div className="gmd-navbar">
         <GMDNavbar />
       </div>
 
-      {/* Main Content */}
       <main className="main-content">
         <About />
         <Experience />
