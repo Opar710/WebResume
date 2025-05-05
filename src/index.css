@@ -1,35 +1,21 @@
-/* ===== GLOBAL RESET ===== */
+@charset "UTF-8";
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
-  font-family: 'Muli', Arial, sans-serif;
-  background-color: #000;
-  color: #fff;
   overflow-x: hidden;
   scrollbar-gutter: stable;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Smooth scroll & spacing for anchor links */
-html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 2rem;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
-}
-
-
-@media (max-width: 1200px) {
-  body {
-    padding-top: 0 !important; 
-  }
 }

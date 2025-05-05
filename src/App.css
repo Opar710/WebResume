@@ -23,6 +23,7 @@ body {
   background: inherit;
   color: inherit;
   overflow-x: hidden;
+  padding-top: 0 !important;
 }
 
 ul,
@@ -146,8 +147,7 @@ h6 { font-size: 1rem; }
 }
 
 /* ===== LAYOUT CONTAINERS ===== */
-main,
-.main-content {
+main {
   margin-left: 17rem;
   min-height: 100vh;
   transition: margin-left 0.2s ease-in-out;
