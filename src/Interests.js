@@ -1,13 +1,6 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 
 export default function Interests() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.type = "module";
-    script.src = "https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js";
-    document.body.appendChild(script);
-  }, []);
-
   return (
     <section className="resume-section" id="interests">
       <div className="resume-section-content">

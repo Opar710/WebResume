@@ -9,11 +9,34 @@ import Awards from './Awards';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
-import './App.css'; 
+import './App.css';
+
+import profileImg from './profile.jpg';
 
 function App() {
   return (
-    <>
+    <div className="layout">
+      {/* Desktop Sidebar Nav */}
+      <div id="sideNav">
+        <div className="profile-img-wrapper">
+          <img className="profile-img" src={profileImg} alt="Profile" />
+        </div>
+        <ul className="navbar-nav">
+          <li><a className="nav-link" href="#about">About</a></li>
+          <li><a className="nav-link" href="#experience">Experience</a></li>
+          <li><a className="nav-link" href="#education">Education</a></li>
+          <li><a className="nav-link" href="#skills">Skills</a></li>
+          <li><a className="nav-link" href="#interests">Interests</a></li>
+          <li><a className="nav-link" href="#awards">Awards</a></li>
+        </ul>
+      </div>
+
+      {/* Mobile Top Navbar */}
+      <div className="gmd-navbar">
+        <GMDNavbar />
+      </div>
+
+      {/* Main Content */}
       <main className="main-content">
         <About />
         <Experience />
@@ -22,7 +45,7 @@ function App() {
         <Interests />
         <Awards />
       </main>
-    </>
+    </div>
   );
 }
 
