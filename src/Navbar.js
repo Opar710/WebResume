@@ -1,29 +1,29 @@
 import React from 'react';
+import { Navbar, Nav, Container } from 'react-bootstrap';
 
-export default function GMDNavbar() {
+function GMDNavbar() {
   return (
-    <nav id="sideNav">
-      <div className="sidebar-content">
-        <h1 className="mobile-title">Mobile Web Specialist</h1>
-        
-        {/* Image wrapper for red border */}
-        <div className="profile-img-wrapper">
-          <img
-            className="profile-img"
-            src="/assets/img/profile.jpg"
-            alt="Gianni Massimo Daino"
-          />
-        </div>
+    <Navbar bg="dark" variant="dark" expand="lg" fixed="top" className="px-3 py-2">
+      <Container fluid>
+        <Navbar.Brand href="#home" className="fw-bold text-uppercase">
+          Mobile First Web Developer
+        </Navbar.Brand>
 
-        <ul className="navbar-nav">
-          <li><a className="nav-link" href="#about">About</a></li>
-          <li><a className="nav-link" href="#experience">Experience</a></li>
-          <li><a className="nav-link" href="#education">Education</a></li>
-          <li><a className="nav-link" href="#skills">Skills</a></li>
-          <li><a className="nav-link" href="#interests">Interests</a></li>
-          <li><a className="nav-link" href="#awards">Awards</a></li>
-        </ul>
-      </div>
-    </nav>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="ms-auto text-center text-lg-start flex-column flex-lg-row gap-2 gap-lg-4">
+            <Nav.Link href="#about">About</Nav.Link>
+            <Nav.Link href="#experience">Experience</Nav.Link>
+            <Nav.Link href="#education">Education</Nav.Link>
+            <Nav.Link href="#skills">Skills</Nav.Link>
+            <Nav.Link href="#interests">Interests</Nav.Link>
+            <Nav.Link href="#awards">Awards</Nav.Link>
+          </Nav>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
   );
 }
+
+export default GMDNavbar;
